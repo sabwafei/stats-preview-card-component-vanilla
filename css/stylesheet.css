@@ -1,0 +1,24 @@
+/* coded by SabWaFei */
+
+/* footer */
+footer {
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+/* }
+end footer */
+
+/* attrition section */
+.attribution {
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+  background-color: lightblue;
+  padding: 1em 0;
+}
+.attribution a {
+  color: blue;
+}
