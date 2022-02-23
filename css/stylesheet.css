@@ -1,5 +1,6 @@
 /* coded by SabWaFei */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+/* base styles */
 :root {
   --clr-drk-blue: hsl(233, 47%, 7%);
   --clr-desat-blue: hsl(244, 38%, 16%);
@@ -14,12 +15,12 @@
   --fw-lex-reg: 400;
 }
 body {
-  height: 100vh;
-  width: 100%;
   font-size: 15px;
   font-family: var(--ff-inter);
   font-weight: var(--fw-inter-reg);
+  /* background-color: var(--clr-desat-blue); */
 }
+
 .flx-col {
   display: flex;
   flex-direction: column;
@@ -31,6 +32,44 @@ body {
   justify-content: center;
   align-items: center;
 }
+/* end base styles */
+
+/* main styling */
+.pic--desktop {
+  /* image disabled for mobile display */
+  display: none;
+}
+.edge {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card {
+  max-width: 350px;
+  border-radius: 10px;
+}
+.pic--mobile {
+  z-index: 0;
+}
+.card__pic img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.card__pic {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  position: relative;
+}
+.card__pic::before {
+  content: "";
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: hsla(277, 64%, 61%, 0.3);
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+/* end main styling */
 /* footer */
 footer {
   text-align: center;
